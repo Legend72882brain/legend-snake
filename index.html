@@ -198,9 +198,12 @@ let data = snapshot.val();
 
 let players = [];
 
-for(let key in data){
-    players.push(data[key]);
+if(data){
+    for(let key in data){
+        players.push(data[key]);
+    }
 }
+
 
 players.sort((a,b)=>b.score-a.score);
 
@@ -241,7 +244,7 @@ document.getElementById('bodyBg').style.background =
 "url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1600') center center / cover no-repeat";
 document.getElementById('gorillaPage').style.display='none';
 document.getElementById('snakePage').style.display='block';
-showLeaderboard();
+
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
