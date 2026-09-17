@@ -118,7 +118,7 @@ to{transform:scale(1.05);}
 <div id="loginPage">
 
 <h3 id="mainTitle">
-★ WELCOME TO LEGEND'S WEBSITE ★
+★ WELCOME TO ⓞⓟ ⓗⓐⓒⓚⓔⓡ𓃵❀'S WEBSITE ★
 </h3>
 
 <div class="login-box">
@@ -319,9 +319,9 @@ players.forEach((player,index)=>{
 table.innerHTML += `
 <tr>
 <td>
-${index===0 ? "#1" :
-  index===1 ? "#2" :
-  index===2 ? "#3" :
+${index===0 ? "🥇" :
+  index===1 ? "🥈" :
+  index===2 ? "🥉" :
   index+1}
 </td>
 <td>${player.name}</td>
@@ -380,7 +380,7 @@ function clearBoard(){
 
 let pass = prompt("Admin Password");
 
-if(pass==="legendadmin"){
+if(pass==="harsha@87093"){
 
 db.ref("leaderboard").remove();
 
